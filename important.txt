@@ -1,0 +1,20 @@
+else {
+    switch ($menu) {
+        case 'home':
+        case null:
+            include 'index.php';
+            break;
+        case 'quit':
+            require_once 'quit.php';
+            break;
+        case 'register':
+            require_once 'register.php';
+            break;
+        case 'login':
+            require_once 'login.php';
+            break;
+        default:
+            break;
+    }
+}
+
